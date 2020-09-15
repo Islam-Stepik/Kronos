@@ -3,10 +3,21 @@
 <head>
     <title>Getting Started: Serving Web Content</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <style>
+   body {
+    background: black;
+    color: white;
+   }
+   a {
+    color: red;
+   }
+  </style>
 </head>
 <body>
-<p th:text="'Test'" />
-<br>
+<header th:insert="blocks/header :: header"></header>
+
 <center><h1 th:text="  ${title}  " /></center>
+<div th:insert="blocks/footer :: footer"></div>
 </body>
 </html>
