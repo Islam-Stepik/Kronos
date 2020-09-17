@@ -2,10 +2,13 @@
     <footer class="text-muted">
         <div class="container">
             <p class="float-right">
-                <a href="/">Back to top</a>
+                <a href="/home">Back to top</a>
             </p>
             <p>Unser Footer</p>
             <p></p>
         </div>
+        <div><form th:action="@{/logout}" method="post">
+            <input type="submit" value="Sign Out"/>
+        </form></div>
     </footer>
 </div>

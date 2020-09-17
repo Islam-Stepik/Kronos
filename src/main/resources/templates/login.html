@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org" xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <style>
+   body {
+    background: black;
+    color: white;
+   }
+   p {
+    color: red;
+   }
+  </style>
+    <title>Spring Security Example</title>
+</head>
+<body>
+<h1>Welcome!</h1>
+
+<p>hier <a th:href="@{/home}">klicken</a> zur Hautpfenster.</p>
+<p>hier <a th:href="@{/urlaub}">klicken</a> zur Urlaubsfenster.</p>
+<p>hier <a th:href="@{/abwesenheit}">klicken</a> zur Abwesenheitsfenster.</p>
+<p>hier <a th:href="@{/eigene}">klicken</a> zur Eigene Info.</p>
+
+</body>
+</html>
